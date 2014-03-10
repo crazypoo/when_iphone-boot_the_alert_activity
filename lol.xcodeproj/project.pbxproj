@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC0E096A18CDA85B00A65BB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC0E096918CDA85B00A65BB6 /* Foundation.framework */; };
+		CC0E097518CDA85B00A65BB6 /* lol.mm in Sources */ = {isa = PBXBuildFile; fileRef = CC0E097418CDA85B00A65BB6 /* lol.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CC0E096618CDA85B00A65BB6 /* lol.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = lol.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC0E096918CDA85B00A65BB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CC0E096E18CDA85B00A65BB6 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		CC0E096F18CDA85B00A65BB6 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		CC0E097118CDA85B00A65BB6 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		CC0E097218CDA85B00A65BB6 /* lol-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lol-Prefix.pch"; sourceTree = "<group>"; };
+		CC0E097318CDA85B00A65BB6 /* lol.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = lol.xm; sourceTree = "<group>"; };
+		CC0E097418CDA85B00A65BB6 /* lol.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = lol.mm; sourceTree = "<group>"; };
+		CC0E097918CDA85B00A65BB6 /* lol.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = lol.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/lol.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC0E096218CDA85B00A65BB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC0E096A18CDA85B00A65BB6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC0E095B18CDA85B00A65BB6 = {
+			isa = PBXGroup;
+			children = (
+				CC0E096B18CDA85B00A65BB6 /* lol */,
+				CC0E096818CDA85B00A65BB6 /* Frameworks */,
+				CC0E096718CDA85B00A65BB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC0E096718CDA85B00A65BB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC0E096618CDA85B00A65BB6 /* lol.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC0E096818CDA85B00A65BB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC0E096918CDA85B00A65BB6 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC0E096B18CDA85B00A65BB6 /* lol */ = {
+			isa = PBXGroup;
+			children = (
+				CC0E097318CDA85B00A65BB6 /* lol.xm */,
+				CC0E097418CDA85B00A65BB6 /* lol.mm */,
+				CC0E096C18CDA85B00A65BB6 /* Package */,
+				CC0E097018CDA85B00A65BB6 /* Supporting Files */,
+			);
+			path = lol;
+			sourceTree = "<group>";
+		};
+		CC0E096C18CDA85B00A65BB6 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				CC0E096D18CDA85B00A65BB6 /* DEBIAN */,
+				CC0E097618CDA85B00A65BB6 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		CC0E096D18CDA85B00A65BB6 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				CC0E096E18CDA85B00A65BB6 /* control.txt */,
+				CC0E096F18CDA85B00A65BB6 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		CC0E097018CDA85B00A65BB6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC0E097118CDA85B00A65BB6 /* PackageVersion.plist */,
+				CC0E097218CDA85B00A65BB6 /* lol-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC0E097618CDA85B00A65BB6 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				CC0E097718CDA85B00A65BB6 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		CC0E097718CDA85B00A65BB6 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				CC0E097818CDA85B00A65BB6 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		CC0E097818CDA85B00A65BB6 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				CC0E097918CDA85B00A65BB6 /* lol.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CC0E096318CDA85B00A65BB6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CC0E096518CDA85B00A65BB6 /* lol */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC0E097C18CDA85B00A65BB6 /* Build configuration list for PBXNativeTarget "lol" */;
+			buildPhases = (
+				CC0E096018CDA85B00A65BB6 /* ShellScript */,
+				CC0E096118CDA85B00A65BB6 /* Sources */,
+				CC0E096218CDA85B00A65BB6 /* Frameworks */,
+				CC0E096318CDA85B00A65BB6 /* Headers */,
+				CC0E096418CDA85B00A65BB6 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lol;
+			productName = lol;
+			productReference = CC0E096618CDA85B00A65BB6 /* lol.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC0E095C18CDA85B00A65BB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = CC0E095F18CDA85B00A65BB6 /* Build configuration list for PBXProject "lol" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CC0E095B18CDA85B00A65BB6;
+			productRefGroup = CC0E096718CDA85B00A65BB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC0E096518CDA85B00A65BB6 /* lol */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CC0E096018CDA85B00A65BB6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		CC0E096418CDA85B00A65BB6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC0E096118CDA85B00A65BB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC0E097518CDA85B00A65BB6 /* lol.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CC0E097A18CDA85B00A65BB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		CC0E097B18CDA85B00A65BB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		CC0E097D18CDA85B00A65BB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "lol/lol-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		CC0E097E18CDA85B00A65BB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "lol/lol-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC0E095F18CDA85B00A65BB6 /* Build configuration list for PBXProject "lol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC0E097A18CDA85B00A65BB6 /* Debug */,
+				CC0E097B18CDA85B00A65BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC0E097C18CDA85B00A65BB6 /* Build configuration list for PBXNativeTarget "lol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC0E097D18CDA85B00A65BB6 /* Debug */,
+				CC0E097E18CDA85B00A65BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC0E095C18CDA85B00A65BB6 /* Project object */;
+}

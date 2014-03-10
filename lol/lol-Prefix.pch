@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'lol' target in the 'lol' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
