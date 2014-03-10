@@ -1,39 +1,28 @@
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+static id __sb = nil;
 
-// Logos by Dustin Howett
-// See http://iphonedevwiki.net/index.php/Logos
-
-#error iOSOpenDev post-project creation from template requirements (remove these lines after completed) -- \
-	Link to libsubstrate.dylib: \
-	(1) go to TARGETS > Build Phases > Link Binary With Libraries and add /opt/iOSOpenDev/lib/libsubstrate.dylib \
-	(2) remove these lines from *.xm files (not *.mm files as they're automatically generated from *.xm files)
-
-%hook ClassName
-
-+ (id)sharedInstance
+%hook SpringBoard
+-(void)applicationDidFinishLaunching: (id)application
 {
-	%log;
-
-	return %orig;
+    %orig;
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"大家好"message:@"這是我的第一個開發的越獄插件"delegate:self cancelButtonTitle:@"感謝CCTV"otherButtonTitles:nil];
+[alert show];
+[alert release];
 }
-
-- (void)messageWithNoReturnAndOneArgument:(id)originalArgument
+- (id)init
 {
-	%log;
-
-	%orig(originalArgument);
-	
-	// or, for exmaple, you could use a custom value instead of the original argument: %orig(customValue);
+    __sb = self;
+    return %orig;
 }
-
-- (id)messageWithReturnAndNoArguments
+- (void)alertView: (UIAlertView *)alertView clickedButtonAtIndex: (NSInteger)buttonIndex
 {
-	%log;
-
-	id originalReturnOfMessage = %orig;
-	
-	// for example, you could modify the original return value before returning it: [SomeOtherClass doSomethingToThisObject:originalReturnOfMessage];
-
-	return originalReturnOfMessage;
+//　　[__sb relaunchSpringBoard];
 }
+%new( @@: )
 
++ (id)sharedBoard
+{
+    return __sb;
+}
 %end

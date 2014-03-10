@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CC0E096A18CDA85B00A65BB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC0E096918CDA85B00A65BB6 /* Foundation.framework */; };
 		CC0E097518CDA85B00A65BB6 /* lol.mm in Sources */ = {isa = PBXBuildFile; fileRef = CC0E097418CDA85B00A65BB6 /* lol.mm */; };
+		CC0E098018CDA8CB00A65BB6 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CC0E097F18CDA8CB00A65BB6 /* libsubstrate.dylib */; };
+		CC0E098218CDA8D700A65BB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC0E098118CDA8D700A65BB6 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,9 +20,11 @@
 		CC0E096F18CDA85B00A65BB6 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
 		CC0E097118CDA85B00A65BB6 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
 		CC0E097218CDA85B00A65BB6 /* lol-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lol-Prefix.pch"; sourceTree = "<group>"; };
-		CC0E097318CDA85B00A65BB6 /* lol.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = lol.xm; sourceTree = "<group>"; };
+		CC0E097318CDA85B00A65BB6 /* lol.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = lol.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		CC0E097418CDA85B00A65BB6 /* lol.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = lol.mm; sourceTree = "<group>"; };
 		CC0E097918CDA85B00A65BB6 /* lol.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = lol.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/lol.plist; sourceTree = "<group>"; };
+		CC0E097F18CDA8CB00A65BB6 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libsubstrate.dylib; sourceTree = "<group>"; };
+		CC0E098118CDA8D700A65BB6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +32,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC0E098218CDA8D700A65BB6 /* UIKit.framework in Frameworks */,
+				CC0E098018CDA8CB00A65BB6 /* libsubstrate.dylib in Frameworks */,
 				CC0E096A18CDA85B00A65BB6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +61,8 @@
 		CC0E096818CDA85B00A65BB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CC0E098118CDA8D700A65BB6 /* UIKit.framework */,
+				CC0E097F18CDA8CB00A65BB6 /* libsubstrate.dylib */,
 				CC0E096918CDA85B00A65BB6 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -287,6 +295,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "lol/lol-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/dengjiehao/Desktop/lol,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
@@ -307,6 +319,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "lol/lol-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/dengjiehao/Desktop/lol,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
